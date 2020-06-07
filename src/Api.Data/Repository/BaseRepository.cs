@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using Api.Data.Context;
 using Api.Domain.Entities;
@@ -75,7 +76,7 @@ namespace Api.Data.Repository
             }
         }
 
-        public async Task<IEnumerable> SelectAsync()
+        public async Task<IEnumerable<T>> SelectAsync()
         {
             try
             {
